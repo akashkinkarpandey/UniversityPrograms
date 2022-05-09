@@ -65,7 +65,7 @@ int main()
         a[v][u]=1;
     }
     printf("DFS is\n");
-    for(int i=1;i<=e;i++)
+    for(int i=1;i<=n;i++)
     {
         if(!vis[i])
         dfs(i);
