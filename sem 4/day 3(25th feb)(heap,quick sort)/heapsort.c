@@ -1,4 +1,5 @@
 #include<stdio.h>
+//1-based indexing
 void max_heap(int a[],int n,int i)
 {
     int l=2*i;
