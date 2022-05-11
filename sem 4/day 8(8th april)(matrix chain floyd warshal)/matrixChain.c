@@ -1,22 +1,41 @@
 #include <stdio.h>
 #include <limits.h>
-// input
-//  Enter number of matrices
-//  4
-//  Enter the matrix dimensions
-//  3 2 4 2 5
-// output
-//  Minimum operations required are 58
-//  Matrix 1 for operations-
-//  0 24 28 58
-//  I 0 16 36
-//  I I 0 40
-//  I I I 0
-//  Matrix 2 for parentheses-
-//  I 1 1 3
-//  I I 2 3
-//  I I I 3
-//  I I I I
+//input
+
+// Enter number of matrices
+// 4
+// Enter the matrix dimensions
+// 3 2 4 2 5
+
+//output
+// Minimum operations required are 58
+// Matrix 1 for operations-
+// 0 24 28 58
+// I 0 16 36
+// I I 0 40
+// I I I 0
+// Matrix 2 for parentheses-
+// I 1 1 3
+// I I 2 3
+// I I I 3
+// I I I I
+// ((A1(A2A3))A4)
+int parenthesis[50][50];
+void printBraces(int i,int j)
+{
+    if(i==j)
+    {
+        printf("A%d",i);
+        return;
+    }
+    else
+    {
+        printf("(");
+        printBraces(i,parenthesis[i][j]);
+        printBraces(parenthesis[i][j]+1,j);
+        printf(")");
+    }
+}
 int main()
 {
     int i, n, k, j;
@@ -27,7 +46,7 @@ int main()
     for (i = 0; i <= n; i++)
         scanf("%d", &a[i]);
     int mat[n + 1][n + 1];
-    int parenthesis[n + 1][n + 1];
+    // int parenthesis[n + 1][n + 1];
     for (i = 0; i <= n; i++)
     {
         for (j = 0; j <= n; j++)
@@ -87,4 +106,6 @@ int main()
         }
         printf("\n");
     }
+    printBraces(1,n);
+    printf("\n");
 }
