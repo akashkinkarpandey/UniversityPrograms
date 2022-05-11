@@ -41,8 +41,8 @@ bool vis[101];
 int n,e;
 void dfs(int vertex)
 {
-    if(vis[vertex])
-    return;
+    //if(vis[vertex])
+    //return;
     printf("%d ",vertex);
     vis[vertex]=1;
     for(int adjacentVertex=1;adjacentVertex<=n;adjacentVertex++)
