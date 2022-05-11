@@ -1,4 +1,5 @@
 //Prim's Algo perfectly working
+//0-Based Indexing
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
