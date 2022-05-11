@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
-// Input
+//input
 // Enter number of nodes,edges
 // 5 7
 // Enter source,destination,weight
@@ -21,12 +21,13 @@
 // Enter source,destination,weight
 // 3 4 5
 
-//Output
+//output
 // MST is
 // 0 1 4
 // 1 2 2
 // 2 3 3
 // 3 4 5
+// Minimum sum of edges is 14
 int findMinVertex(int weights[], bool visited[], int n)
 {
     int minVertex = -1;
@@ -85,16 +86,21 @@ int main()
             }
         }
     }
+    int cost=0;
     printf("MST is\n");
     for (i = 1; i < n; i++)
     {
         if (parent[i] < i)
         {
+            cost += edges[parent[i]][i];
             printf("%d %d %d\n", parent[i], i, weights[i]);
         }
         else
         {
+            cost += edges[i][parent[i]];
             printf("%d %d %d\n", i, parent[i], weights[i]);
         }
     }
+    printf("Minimum sum of edges is %d\n", cost);
+
 }
