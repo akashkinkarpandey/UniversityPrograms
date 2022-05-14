@@ -13,7 +13,7 @@ int bino(int n,int r)
         dp[n][r]=1;
         return 1;
     }
-    if(dp[n][r]==0)
+    if(dp[n][r]==0) //line 16 and 17 can be commented
     return 0;
     if(dp[n][r]!=-1)
         return dp[n][r];
