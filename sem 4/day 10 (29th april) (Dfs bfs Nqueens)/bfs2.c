@@ -7,7 +7,7 @@
 // 1-Based indexing of graphs
 // input
 //  Enter number of nodes,edges
-//  7 8
+//  8 8
 //  Enter source,destination
 //  1 2
 //  Enter source,destination
