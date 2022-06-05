@@ -1,0 +1,54 @@
+Programs done in Lab till now-
+1-Binary search recursive
+
+2- column wise sorting
+
+3- row wise sorting
+
+4-snake wise sorting (2 different programs)
+
+5-merge sort
+
+6-heap sort
+(1-based indexing)
+
+7-quick sort
+first element as pivot
+last element as pivot
+
+8-Coin change
+
+9-Knapsack-3 strategies
+increasing weight
+decreasing profit
+decreasing profit/weight ratio
+
+10 max min using divide and conquer 
+
+11 activity selection
+
+12 job sequencing
+
+13 Menu Driven Knapsack
+
+14 Fibonacci DP
+
+15 Binomial Coefficient DP
+
+16 Kruskal's Algo
+
+17 Prims's Algo(added at end of lab)
+
+18  Matrix Chain
+
+19 Floyd Warshall
+
+20 Bellman ford
+
+21 Depth first search
+
+22 Breadth first search
+
+23 N queens
+
+24 M colouring

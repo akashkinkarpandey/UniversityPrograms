@@ -1,0 +1,3 @@
+deleteAtEnd();
+    deleteAtEnd();
+    deleteAtEnd();
