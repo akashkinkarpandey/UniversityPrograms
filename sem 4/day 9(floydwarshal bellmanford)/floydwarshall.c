@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-//floyd warshall
-//no negative edge should be included
+//floyd warshall for directed graph
 //input:-
 // Enter number of nodes,edges
 // 4 7
@@ -26,6 +25,8 @@
 // 5 0 2 3
 // 3 6 0 1
 // 2 5 7 0
+
+
 long long min(long long a, long long b)
 {
     if (a > b)
@@ -60,19 +61,19 @@ int main()
         {
             for (j = 1; j <= n; j++)
             {
-                if (i == j)
-                    continue;
+		if(g[i][k]<INT_MAX && g[k][j]<INT_MAX)    //you can find a path i->j iff i->k and k->j paths are exist
                 g[i][j] = min(g[i][j], g[i][k] + g[k][j]);
-                // if (g[i][k] != INT_MAX)
-                // {
-                //     if (g[k][j] != INT_MAX)
-                //     {
-                //         g[i][j] = min(g[i][j], (g[i][k] + g[k][j]));
-                //     }
-                // }
             }
         }
     }
+
+        //check for -ve edge cyle
+	for(i=1; i<=n; i++)
+		if(g[i][i]<0){
+			printf("\n-ve edge cycle is Present!");
+			return;
+		}
+
     printf("Output Matrix is\n");
     for (i = 1; i <= n; i++)
     {
