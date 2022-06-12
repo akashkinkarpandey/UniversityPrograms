@@ -36,7 +36,7 @@
 
 // output
 // DFS is
-// 1 8 12 9 11 10 7 2 6 3 5 4
+// 1 8 12 9 11 10 7 2 6 3 5 4 13
 
 //variables for graph declared here
 int mat[101][101];//adjacency matrix
