@@ -52,3 +52,14 @@ decreasing profit/weight ratio
 23 N queens
 
 24 M colouring
+
+
+Extra->
+
+Dijkstra
+
+Hamiltonian Cycle
+
+15 puzzle
+
+Random Matrix
