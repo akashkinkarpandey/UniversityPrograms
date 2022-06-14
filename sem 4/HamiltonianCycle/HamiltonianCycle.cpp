@@ -39,7 +39,7 @@ void nextValue(int k)
     while (1)
     {
         x[k] = (x[k] + 1) % (n + 1);
-        if (x[k] == 0 || (k == 1 && x[k] == 1)) // k=1 and x[k]=1 s that we dont get same cycles
+        if (x[k] == 0 || (k == 1 && x[k] == 1)) // k=1 and x[k]=1 so that we dont get same cycles
             return;
         // if we are trying to find node for kth position
         // it means k-1 positions already have nodes
