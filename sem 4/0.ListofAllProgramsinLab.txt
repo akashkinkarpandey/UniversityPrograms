@@ -56,7 +56,7 @@ decreasing profit/weight ratio->O(N^2)
 
 Extra->
 
-Dijkstra
+Dijkstra->O(N^2)
 
 Hamiltonian Cycle
 
