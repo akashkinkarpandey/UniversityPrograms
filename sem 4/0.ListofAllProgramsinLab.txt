@@ -7,51 +7,51 @@ Programs done in Lab till now-
 
 4-snake wise sorting (2 different programs)
 
-5-merge sort
+5-merge sort->O(N Log N)
 
-6-heap sort
+6-heap sort->O(N Log N)
 (1-based indexing)
 
 7-quick sort
 first element as pivot
 last element as pivot
 
-8-Coin change
+8-Coin change->O(N^2)
 
 9-Knapsack-3 strategies
 increasing weight
 decreasing profit
-decreasing profit/weight ratio
+decreasing profit/weight ratio->O(N^2)
 
-10 max min using divide and conquer 
+10 max min using divide and conquer->O(N^2)
 
-11 activity selection
+11 activity selection->O(N^2)
 
-12 job sequencing
+12 job sequencing->O(N^2)
 
-13 Menu Driven Knapsack
+13 Menu Driven Knapsack->O(N^2)
 
-14 Fibonacci DP
+14 Fibonacci DP->O(N)
 
-15 Binomial Coefficient DP
+15 Binomial Coefficient DP->TC->O(n^2)
 
-16 Kruskal's Algo
+16 Kruskal's Algo->O(Sorting ) or O(N^2)
 
-17 Prims's Algo(added at end of lab)
+17 Prims's Algo(added at end of lab)->O(N^2)
 
-18  Matrix Chain
+18  Matrix Chain->O(n^3)
 
-19 Floyd Warshall
+19 Floyd Warshall->O(N^3)
 
-20 Bellman ford
+20 Bellman ford->O(N^3) or O(VE)
 
 21 Depth first search
 
 22 Breadth first search
 
-23 N queens
+23 N queens->TC->O(N!)
 
-24 M colouring
+24 M colouring ->TC(O(N^M))
 
 
 Extra->
