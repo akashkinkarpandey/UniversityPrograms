@@ -1,5 +1,5 @@
-// #include<stdio.h>
-// #include<limits.h>
+#include<stdio.h>
+#include<limits.h>
 // Enter number of items
 // 5
 // Enter id,profit,deadline
