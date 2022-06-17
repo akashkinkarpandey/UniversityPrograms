@@ -5,7 +5,7 @@ int g[101][101];
 int n, e;
 int x[100];
 // Hamiltonian Cycle Program
-// Input
+// Inpu
 //  Enter number of nodes,edges
 //  5 8
 //  Enter source,destination
