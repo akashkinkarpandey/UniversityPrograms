@@ -1,4 +1,4 @@
-All Programs done in Lab till now-
+All Lab Programs done in Lab till now-
 1-Binary search recursive
 
 2- column wise sorting
